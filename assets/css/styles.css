@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,400&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.logo {
+  text-transform: capitalize;
+  width: 76px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+}
+
+.hamburger {
+  width: 18px;
+  height: 12px;
+  color: #6070ff;
+  cursor: pointer;
+}
+
+/* .hamburger:hover{
+
+} */
+
+.hero-section {
+  background: #fff;
+  padding: 1em 1em;
+  background-image: url(/assets/images/svg/header-shapes\ mobile@2x.svg);
+  background-size: 100% auto;
+  background-position: center;
+  border-bottom-left-radius: 150px;
+  background-repeat: no-repeat;
+  min-height: 587.15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#name {
+  width: 85%;
+  height: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 46px;
+}
+
+.details {
+  width: 95%;
+  height: 146px;
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.connect {
+  text-transform: capitalize;
+  padding-top: 1.5em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.connect:hover {
+  color: #344563;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 170.17px;
+  height: 20px;
+  margin-top: 1.5em;
+}
+
+.icons:hover {
+  transform: translateY(10px);
+  transition: 0.5s;
+
+  /* background: pink; */
+}
