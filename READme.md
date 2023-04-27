@@ -39,6 +39,9 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
+-shows my portfolio
+-has a contact form
+-has a download button for my resume
 
 - **[Demo on what is linters and how it works]**
 
@@ -161,7 +164,6 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[contact-form]**
 - [ ] **[desktop-view]**
 - [ ] **[hamburger-menu]**
 
