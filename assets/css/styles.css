@@ -54,7 +54,7 @@ a {
   background-image: url(/assets/images/svg/header-shapes\ mobile@2x.svg);
   background-size: 100% auto;
   background-position: center;
-  border-bottom-left-radius: 150px;
+  border-bottom-left-radius: 90px;
   background-repeat: no-repeat;
   min-height: 587.15px;
   display: flex;
