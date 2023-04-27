@@ -110,12 +110,6 @@ a {
 }
 
 #work-section {
-  display: block;
-  margin-top: 46px;
-  padding: 1em 1em;
-}
-
-.portfolio {
   width: 95%;
   margin: auto;
   display: grid;
@@ -123,6 +117,8 @@ a {
   grid-auto-flow: row;
   justify-items: center;
   align-items: center;
+  margin-top: 46px;
+  padding: 1em 1em;
 }
 
 .project {
@@ -212,16 +208,22 @@ a {
   color: #396df2;
   margin-bottom: 10px;
   cursor: pointer;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:focus {
+  background: #2230d2;
 }
 
 .resume {
   margin: 15px 0;
   width: 162px;
-}
-
-.btn:hover {
-  color: #fff;
-  background-color: #396df2;
 }
 
 #about {
@@ -235,14 +237,34 @@ a {
   padding-bottom: 7em;
 }
 
+.about-container {
+  padding-top: 6em;
+}
+
+.myself {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #172b4d;
+  margin-bottom: 10px;
+}
+
+.about-details {
+  width: 95%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 10px;
+}
+
 .skills {
   padding-top: 30px;
   width: 95%;
+  list-style: none;
 }
 
-/* .languages{
-    width: 95%;
-} */
 .skill-group {
   display: flex;
   justify-content: space-between;
@@ -302,8 +324,9 @@ a {
 .contact-container {
   background: #6070ff;
   background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg);
-  background-size: 100% auto;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
   border-top-left-radius: 90px;
 }
 
@@ -324,6 +347,7 @@ a {
   text-align: center;
   padding: 20px;
   transition: transform 3s;
+  font-weight: 400px;
   color: #ebebff;
 }
 
