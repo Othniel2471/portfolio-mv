@@ -165,6 +165,7 @@ a {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+  list-style: none;
 }
 
 .work-details {
@@ -253,7 +254,7 @@ a {
 .about-details {
   width: 95%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
   color: #344563;
   margin-bottom: 10px;
@@ -297,6 +298,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  gap: 20px;
 }
 
 .canopy li:first-child {
