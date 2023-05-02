@@ -350,8 +350,7 @@ a {
   line-height: 27px;
   text-align: center;
   padding: 20px;
-  transition: transform 3s;
-  font-weight: 400px;
+  font-weight: 400;
   color: #ebebff;
 }
 
