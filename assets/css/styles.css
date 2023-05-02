@@ -17,6 +17,8 @@ a {
   text-decoration: none;
 }
 
+/* Nav Bar start here */
+
 #navigation {
   display: flex;
   width: 100%;
@@ -325,8 +327,7 @@ a {
 
 .contact-container {
   background: #6070ff;
-  background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg);
-  background-repeat: no-repeat;
+  background: url(/assets/images/background/contact\ form\ shapes-mobile.svg) no-repeat;
   background-size: contain;
   background-position-x: right;
   border-top-left-radius: 90px;
