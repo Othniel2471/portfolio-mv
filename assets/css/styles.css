@@ -322,12 +322,12 @@ a {
 }
 
 #contact-form {
-  background-color: #fff;
+  background: #fff;
 }
 
 .contact-container {
   background: #6070ff;
-  background: url(/assets/images/background/contact\ form\ shapes-mobile.svg) no-repeat;
+  background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg) no-repeat;
   background-size: contain;
   background-position-x: right;
   border-top-left-radius: 90px;
