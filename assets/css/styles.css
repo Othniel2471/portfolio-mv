@@ -17,6 +17,8 @@ a {
   text-decoration: none;
 }
 
+/* Nav Bar start here */
+
 #navigation {
   display: flex;
   width: 100%;
@@ -320,7 +322,7 @@ a {
 }
 
 #contact-form {
-  background-color: #fff;
+  background: #fff;
 }
 
 .contact-container {
@@ -348,8 +350,7 @@ a {
   line-height: 27px;
   text-align: center;
   padding: 20px;
-  transition: transform 3s;
-  font-weight: 400px;
+  font-weight: 400;
   color: #ebebff;
 }
 
