@@ -327,7 +327,8 @@ a {
 
 .contact-container {
   background: #6070ff;
-  background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg) no-repeat;
+  background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
   border-top-left-radius: 90px;
