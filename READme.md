@@ -42,6 +42,7 @@
 -shows my portfolio
 -has a contact form
 -has a download button for my resume
+-it's a responsive site 
 
 - **[Demo on what is linters and how it works]**
 
@@ -158,7 +159,6 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[desktop-view]**
 - [ ] **[hamburger-menu]**
 
 

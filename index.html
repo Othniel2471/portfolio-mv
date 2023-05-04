@@ -18,13 +18,18 @@
                 <div class="menu-bar">
                     <i class="fa fa-bars fa-1x hamburger"></i>
                 </div>
+                <ul class="nav-list">
+                    <li class="nav-content"><a href="#work-section-desktop">portfolio</a></li>
+                    <li class="nav-content"><a href="#about">about</a></li>
+                    <li class="nav-content"><a href="#contact-form">contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     <section class="hero-section">
         <div class="hero-container">
             <h1 id="name">
-                I’m Othniel. Glad to see you!
+                I’m Othniel. <br> Glad to see you!
             </h1>
             <p class="details">
                 I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
@@ -50,7 +55,7 @@
         </div>
     </section>
 
-    <section id="work-section">
+    <section id="work-section-mobile">
 
         <div class="project">
             <div class="work-img">
@@ -121,6 +126,7 @@
                 <button class="btn">See Project</button>
             </div>
         </div>
+
         <div class="project">
             <div class="work-img">
                 <img src="/assets/images/projects/anoter-one.png" alt="tonic image">
@@ -143,6 +149,105 @@
                 <button class="btn">See Project</button>
             </div>
         </div>
+
+    </section>
+
+    <section id="work-section-desktop">
+
+        <div class="project one">
+            <div class="work-img">
+                <img src="./assets/images/background/desktop/portfolio image 1.png" alt="tonic image">
+            </div>
+            <div class="work-description">
+                <h2 class="work-title">tonic</h2>
+                <ul class="canopy">
+                    <li>canopy</li>
+                    <li>Back End Dev</li>
+                    <li>2015</li>
+                </ul>
+                <p class="work-details">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="work-tools">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <button class="btn">See Project</button>
+            </div>
+        </div>
+
+        <div class="project two">
+            <div class="work-img">
+                <img src="./assets/images/background/desktop/portfolio image 2.png" alt="tonic image">
+            </div>
+            <div class="work-description">
+                <h2 class="work-title">Multi-Post Stories</h2>
+                <ul class="canopy">
+                    <li>facebook</li>
+                    <li>Full Stack Dev</li>
+                    <li>2015</li>
+                </ul>
+                <p class="work-details">
+                    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.                </p>
+                <ul class="work-tools">
+                    <li>HTML</li>
+                    <li>Ruby on rails</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <button class="btn">See Project</button>
+            </div>
+        </div>
+       
+        <div class="project">
+            <div class="work-img">
+                <img src="./assets/images/background/desktop/portfolio image 3.png" alt="tonic image">
+            </div>
+            <div class="work-description">
+                <h2 class="work-title">facebook 360</h2>
+                <ul class="canopy">
+                    <li>facebook</li>
+                    <li>Full Stack Dev</li>
+                    <li>2015</li>
+                </ul>
+                <p class="work-details">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="work-tools">
+                    <li>HTML</li>
+                    <li>Ruby on rails</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <button class="btn">See Project</button>
+            </div>
+        </div>
+
+        <div class="project two">
+            <div class="work-img">
+                <img src="./assets/images/background/desktop/portfolio image 4.png" alt="tonic image">
+            </div>
+            <div class="work-description">
+                <h2 class="work-title">uber navigation</h2>
+                <ul class="canopy">
+                    <li>uber</li>
+                    <li>Lead Developer</li>
+                    <li>2018</li>
+                </ul>
+                <p class="work-details">
+                    A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                </p>
+                <ul class="work-tools">
+                    <li>HTML</li>
+                    <li>Ruby on rails</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <button class="btn">See Project</button>
+            </div>
+        </div>
+
     </section>
 
     <section id="about">
@@ -153,7 +258,7 @@
             </p>
             <h4 class="connect">let's connect</h4>
             <!-- <a href="#" class="connect">let's connect</a> -->
-            <ul class="socials">
+            <ul class="socials mobile">
                 <li><a href="" >
                     <i><img class="icons" src="/assets/images/icons/github.svg" alt=""></i>
                 </a></li>
@@ -218,7 +323,7 @@
         <div class="contact-container">
             <h2>contact me</h2>
             <p>
-                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. <br>
+                If you have an application you are interested in developing, a feature that you need built or a project that needs coding.
                 I’d love to help with it!
             </p>
             <form  action="https://formspree.io/f/mpzebpge" method="POST">
@@ -227,7 +332,9 @@
                     <input class="form-items" type="email" name="email" placeholder="loremipsum@gmail.com" required>
                     <textarea maxlength="500" name="message" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
                 </div>
-                <button type="submit" class="btn cont">get in touch</button>
+                <div class="deliver">
+                    <button type="submit" class="btn cont">get in touch</button>
+                </div>
             </form>
         </div>
     </footer>
