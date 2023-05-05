@@ -68,7 +68,6 @@ a {
   }
 }
 
-
 .hamburger {
   width: 18px;
   height: 12px;
@@ -266,7 +265,7 @@ a {
   z-index: 1;
 }
 
-.btn::before{
+.btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -289,7 +288,7 @@ a {
   transform: scaleX(1);
 }
 
-.btn:hover{
+.btn:hover {
   color: #fff;
 }
 
@@ -502,7 +501,7 @@ textarea::placeholder {
     position: relative;
   }
 
-  .nav-list .nav-content a::before{
+  .nav-list .nav-content a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -515,15 +514,13 @@ textarea::placeholder {
     transform: scaleX(0);
   }
 
-
-
   .nav-list .nav-content a:hover::before {
     transform: scaleX(1);
     transition: 0.1s;
     font-weight: bold;
   }
 
-  .nav-list .nav-content a:hover{
+  .nav-list .nav-content a:hover {
     color: #6070ff;
   }
 
