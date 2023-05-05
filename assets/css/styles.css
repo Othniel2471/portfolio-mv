@@ -38,11 +38,11 @@ a {
   align-items: center;
   text-align: center;
   color: #6070ff;
-  animation-name: rotate;
+  animation-name: rotate_logo;
   animation-duration: 3s;
 }
 
-@keyframes rotate {
+@keyframes rotate_logo {
   0% {
     transform: rotate(0);
   }
