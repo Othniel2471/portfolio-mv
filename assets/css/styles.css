@@ -472,6 +472,7 @@ textarea::placeholder {
     box-shadow: 0 1px 10px -5px grey;
     position: fixed;
     height: 72px;
+    z-index: 2;
   }
 
   nav {
