@@ -82,6 +82,7 @@ a {
 .hero-section {
   background: #fff;
   padding: 1em 1em;
+
   /* background-image: url(/assets/images/svg/header-shapes\ mobile@2x.svg); */
   background-image: url(../images/svg/header-shapes\ mobile@2x.svg);
   background-size: 100% auto;
