@@ -588,7 +588,6 @@ textarea::placeholder {
   }
 
   .project:hover {
-    cursor: pointer;
     border: 2px solid #a7aeff;
   }
 
