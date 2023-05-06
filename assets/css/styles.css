@@ -82,7 +82,8 @@ a {
 .hero-section {
   background: #fff;
   padding: 1em 1em;
-  background-image: url(/assets/images/svg/header-shapes\ mobile@2x.svg);
+  /* background-image: url(/assets/images/svg/header-shapes\ mobile@2x.svg); */
+  background-image: url(../images/svg/header-shapes\ mobile@2x.svg);
   background-size: 100% auto;
   background-position: center;
   border-bottom-left-radius: 90px;
@@ -398,7 +399,7 @@ a {
 
 .contact-container {
   background: #6070ff;
-  background-image: url(/assets/images/background/contact\ form\ shapes-mobile.svg);
+  background-image: url(../images/background/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -525,7 +526,7 @@ textarea::placeholder {
   }
 
   .hero-section {
-    background-image: url(/assets/images/background/desktop/Header\ bg.png);
+    background-image: url(../images/background/desktop/Header\ bg.png);
     background-size: 100% 691.46px;
     background-position-x: right;
     padding-top: 8rem;
