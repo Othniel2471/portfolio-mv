@@ -96,13 +96,40 @@ a {
 }
 
 #name {
-  width: 85%;
+  width: 80%;
   height: 150px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   margin-top: 46px;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 2s steps(12),
+    cursor 0.4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0; }
+}
+
+.glad {
+  margin-top: -98px;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  height: 50px;
+  color: #172b4d;
+  font-weight: bold;
+  margin-bottom: 5rem;
 }
 
 .details {
@@ -547,11 +574,19 @@ textarea::placeholder {
   }
 
   #name {
+    width: 55%;
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
     margin: 10px 0;
     height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .glad {
+    margin-top: -48px;
+    margin-bottom: -32px;
   }
 
   .details {
@@ -696,6 +731,10 @@ textarea::placeholder {
     margin-top: 150px;
   }
 
+  #name {
+    width: 41%;
+  }
+
   .work-img {
     flex: 1;
   }
@@ -739,6 +778,10 @@ textarea::placeholder {
 }
 
 @media only screen and (min-width: 1440px) {
+  #name {
+    width: 29%;
+  }
+
   .canopy {
     width: 63%;
   }
