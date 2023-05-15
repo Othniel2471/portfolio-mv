@@ -75,7 +75,6 @@ a {
   cursor: pointer;
 }
 
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -91,7 +90,7 @@ a {
   display: none;
 }
 
-.active.mobile-menu{
+.active.mobile-menu {
   display: block;
 }
 
@@ -101,7 +100,7 @@ a {
   list-style: none;
 }
 
-.nav-list .nav-content{
+.nav-list .nav-content {
   padding-top: 20px;
 }
 
