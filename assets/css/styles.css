@@ -118,14 +118,13 @@ a {
   line-height: 44px;
 }
 
-.nav-content .desktop{
+.nav-content .desktop {
   display: none;
 }
-.nav-content .mobile{
+
+.nav-content .mobile {
   display: block;
 }
-
-
 
 .hero-section {
   background: #fff;
@@ -610,10 +609,15 @@ textarea::placeholder {
     color: #6070ff;
   }
 
-  .nav-content .mobile{
+  .mobile {
+    margin-top: -0.5em;
+  }
+
+  .nav-content .mobile {
     display: none;
   }
-  .nav-content .desktop{
+
+  .nav-content .desktop {
     display: block;
   }
 
@@ -737,10 +741,6 @@ textarea::placeholder {
     font-size: 16px;
     width: 80%;
     margin: 30px 0;
-  }
-
-  .mobile {
-    margin-top: -0.5em;
   }
 
   .skills {
