@@ -93,7 +93,7 @@ a {
   display: block;
 }
 
-.menu-bar{
+.menu-bar {
   display: block;
   margin-top: -1rem;
   margin-left: 14rem;
@@ -554,6 +554,7 @@ textarea::placeholder {
     backdrop-filter: none;
     padding: 20px 16px;
     display: block;
+
     /* height: 72px; */
     z-index: 2;
   }
