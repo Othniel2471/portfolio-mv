@@ -75,8 +75,55 @@ a {
   cursor: pointer;
 }
 
-.nav-list {
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6070ff;
+  opacity: 0.9;
+  backdrop-filter: blur(7px);
+  transition: all 1s ease;
+  z-index: 2;
   display: none;
+}
+
+.active.mobile-menu {
+  display: block;
+}
+
+.menu-bar {
+  display: block;
+  margin-top: -1rem;
+  margin-left: 14rem;
+}
+
+.nav-list {
+  margin-top: 35px;
+  margin-left: 28px;
+  list-style: none;
+}
+
+.nav-list .nav-content {
+  padding-top: 20px;
+}
+
+.nav-list .nav-content a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.nav-content .desktop {
+  display: none;
+}
+
+.nav-content .mobile {
+  display: block;
 }
 
 .hero-section {
@@ -103,7 +150,6 @@ a {
   line-height: 52px;
   color: #172b4d;
   margin-top: 46px;
-  border-right: 5px solid;
   white-space: nowrap;
   overflow: hidden;
   animation:
@@ -383,7 +429,7 @@ a {
   color: #000;
 }
 
-.active {
+.showing {
   transform: rotate(90deg);
 }
 
@@ -496,7 +542,6 @@ textarea::placeholder {
   #navigation {
     display: flex;
     justify-content: space-between;
-    padding: 16px 66px;
     box-shadow: 0 1px 10px -5px grey;
     position: fixed;
     height: 72px;
@@ -512,6 +557,16 @@ textarea::placeholder {
     display: none;
   }
 
+  .mobile-menu {
+    background-color: transparent;
+    backdrop-filter: none;
+    padding: 20px 16px;
+    display: block;
+
+    /* height: 72px; */
+    z-index: 2;
+  }
+
   .nav-list {
     margin-left: initial;
     display: flex;
@@ -520,6 +575,7 @@ textarea::placeholder {
     gap: 10px;
     list-style: none;
     text-transform: capitalize;
+    margin-top: -20px;
   }
 
   .nav-list .nav-content a {
@@ -553,6 +609,18 @@ textarea::placeholder {
     color: #6070ff;
   }
 
+  .mobile {
+    margin-top: -0.5em;
+  }
+
+  .nav-content .mobile {
+    display: none;
+  }
+
+  .nav-content .desktop {
+    display: block;
+  }
+
   .hero-section {
     background-image: url(../images/background/desktop/Header\ bg.png);
     background-size: 100% 691.46px;
@@ -582,6 +650,7 @@ textarea::placeholder {
     height: 50px;
     white-space: nowrap;
     overflow: hidden;
+    border-right: 5px solid;
   }
 
   .glad {
@@ -672,10 +741,6 @@ textarea::placeholder {
     font-size: 16px;
     width: 80%;
     margin: 30px 0;
-  }
-
-  .mobile {
-    margin-top: -0.5em;
   }
 
   .skills {

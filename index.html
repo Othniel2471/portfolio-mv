@@ -1,343 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omaidu Othniel's Portfolio Website</title>
     <!-- stylesheet link  -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- toggle css -->
+    <link rel="stylesheet" href="./assets/css/toggle.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header id="navigation">
-        <a href="#" class="logo">Welcome!</a>
-        <nav>
-            <div class="mobile-menu">
-                <div class="menu-bar">
-                    <i class="fa fa-bars fa-1x hamburger"></i>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-content"><a href="#work-section-desktop">portfolio</a></li>
-                    <li class="nav-content"><a href="#about">about</a></li>
-                    <li class="nav-content"><a href="#contact-form">contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section class="hero-section">
-        <div class="hero-container">
-            <h1 id="name">
-                I’m Othniel. 
-            </h1>
-            <p class="glad"> Glad to see you!</p>
-            <p class="details">
-                I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-            </p>
-            <h4 class="connect">let's connect</h4>
-            <ul class="socials">
-                <li><a href="#" >
-                    <i><img class="icons" src="./assets/images/icons/twitter.svg" alt="twitter icon"></i>
-                </a></li>
-                <li><a href="#" >
-                    <i><img class="icons" src="./assets/images/icons/Linkedin.svg" alt="Linkedin icon"></i>
-                </a></li>
-                <li><a href="#" >
-                    <i><img class="icons" src="./assets/images/icons/microverse.svg" alt="microverse icon"></i>
-                </a></li>
-                <li><a href="#" >
-                    <i><img class="icons" src="./assets/images/icons/github.svg" alt="github icon"></i>
-                </a></li>
-                <li><a href="#" >
-                    <i><img class="icons" src="./assets/images/icons/peace.svg" alt="angel icon"></i>
-                </a></li>
+      <a href="#" class="logo">Welcome!</a>
+      <nav>
+        <div class="menu-bar">
+            <!-- <i class="fa fa-bars fa-1x hamburger"></i> -->
+            <i class="menu-toggle"></i>
+        </div>
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-content"><a class=" desktop" href="#work-section-desktop">portfolio</a></li>
+                <li class="nav-content"><a class=" mobile" href="#work-section-mobile">portfolio</a></li>
+                <li class="nav-content"><a href="#about">about</a></li>
+                <li class="nav-content"><a  href="#contact-form">contact</a></li>
             </ul>
         </div>
+    </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 id="name">I’m Othniel.</h1>
+        <p class="glad">Glad to see you!</p>
+        <p class="details">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hesitate to contact
+          me.
+        </p>
+        <h4 class="connect">let's connect</h4>
+        <ul class="socials">
+          <li>
+            <a href="#">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/twitter.svg"
+                  alt="twitter icon"
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/Linkedin.svg"
+                  alt="Linkedin icon"
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/microverse.svg"
+                  alt="microverse icon"
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/github.svg"
+                  alt="github icon"
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/peace.svg"
+                  alt="angel icon"
+                />
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="work-section-mobile">
-
-        <div class="project">
-            <div class="work-img">
-                <img src="./assets/images/projects/Snapshoot Portfolio.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">tonic</h2>
-                <ul class="canopy">
-                    <li>canopy</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+      <div class="project">
+        <div class="work-img">
+          <img
+            src="./assets/images/projects/Snapshoot Portfolio.png"
+            alt="tonic image"
+          />
         </div>
-
-        <div class="project">
-            <div class="work-img">
-                <img src="./assets/images/projects/multi-post.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">Multi-Post
-                    Stories</h2>
-                <ul class="canopy">
-                    <li>canopy</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+        <div class="work-description">
+          <h2 class="work-title">tonic</h2>
+          <ul class="canopy">
+            <li>canopy</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
         </div>
-       
-        <div class="project">
-            <div class="work-img">
-                <img src="./assets/images/projects/tonic.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">tonic</h2>
-                <ul class="canopy">
-                    <li>canopy</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
-        </div>
+      </div>
 
-        <div class="project">
-            <div class="work-img">
-                <img src="./assets/images/projects/anoter-one.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">Multi-Post Stories</h2>
-                <ul class="canopy">
-                    <li>canopy</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+      <div class="project">
+        <div class="work-img">
+          <img
+            src="./assets/images/projects/multi-post.png"
+            alt="tonic image"
+          />
         </div>
+        <div class="work-description">
+          <h2 class="work-title">Multi-Post Stories</h2>
+          <ul class="canopy">
+            <li>canopy</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
 
+      <div class="project">
+        <div class="work-img">
+          <img src="./assets/images/projects/tonic.png" alt="tonic image" />
+        </div>
+        <div class="work-description">
+          <h2 class="work-title">tonic</h2>
+          <ul class="canopy">
+            <li>canopy</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="work-img">
+          <img
+            src="./assets/images/projects/anoter-one.png"
+            alt="tonic image"
+          />
+        </div>
+        <div class="work-description">
+          <h2 class="work-title">Multi-Post Stories</h2>
+          <ul class="canopy">
+            <li>canopy</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
     </section>
 
     <section id="work-section-desktop">
-
-        <div class="project one">
-            <div class="work-img">
-                <img src="./assets/images/background/desktop/portfolio image 1.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">tonic</h2>
-                <ul class="canopy">
-                    <li>canopy</li>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+      <div class="project one">
+        <div class="work-img">
+          <img
+            src="./assets/images/background/desktop/portfolio image 1.png"
+            alt="tonic image"
+          />
         </div>
-
-        <div class="project two">
-            <div class="work-img">
-                <img src="./assets/images/background/desktop/portfolio image 2.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">Multi-Post Stories</h2>
-                <ul class="canopy">
-                    <li>facebook</li>
-                    <li>Full Stack Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>Ruby on rails</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+        <div class="work-description">
+          <h2 class="work-title">tonic</h2>
+          <ul class="canopy">
+            <li>canopy</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
         </div>
-       
-        <div class="project">
-            <div class="work-img">
-                <img src="./assets/images/background/desktop/portfolio image 3.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">facebook 360</h2>
-                <ul class="canopy">
-                    <li>facebook</li>
-                    <li>Full Stack Dev</li>
-                    <li>2015</li>
-                </ul>
-                <p class="work-details">
-                    A daily selection of privately personalized reads; no accounts or sign-ups required.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>Ruby on rails</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
-        </div>
+      </div>
 
-        <div class="project two">
-            <div class="work-img">
-                <img src="./assets/images/background/desktop/portfolio image 4.png" alt="tonic image">
-            </div>
-            <div class="work-description">
-                <h2 class="work-title">uber navigation</h2>
-                <ul class="canopy">
-                    <li>uber</li>
-                    <li>Lead Developer</li>
-                    <li>2018</li>
-                </ul>
-                <p class="work-details">
-                    A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
-                </p>
-                <ul class="work-tools">
-                    <li>HTML</li>
-                    <li>Ruby on rails</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                </ul>
-                <button class="btn">See Project</button>
-            </div>
+      <div class="project two">
+        <div class="work-img">
+          <img
+            src="./assets/images/background/desktop/portfolio image 2.png"
+            alt="tonic image"
+          />
         </div>
+        <div class="work-description">
+          <h2 class="work-title">Multi-Post Stories</h2>
+          <ul class="canopy">
+            <li>facebook</li>
+            <li>Full Stack Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>Ruby on rails</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
 
+      <div class="project">
+        <div class="work-img">
+          <img
+            src="./assets/images/background/desktop/portfolio image 3.png"
+            alt="tonic image"
+          />
+        </div>
+        <div class="work-description">
+          <h2 class="work-title">facebook 360</h2>
+          <ul class="canopy">
+            <li>facebook</li>
+            <li>Full Stack Dev</li>
+            <li>2015</li>
+          </ul>
+          <p class="work-details">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>Ruby on rails</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
+
+      <div class="project two">
+        <div class="work-img">
+          <img
+            src="./assets/images/background/desktop/portfolio image 4.png"
+            alt="tonic image"
+          />
+        </div>
+        <div class="work-description">
+          <h2 class="work-title">uber navigation</h2>
+          <ul class="canopy">
+            <li>uber</li>
+            <li>Lead Developer</li>
+            <li>2018</li>
+          </ul>
+          <p class="work-details">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
+          <ul class="work-tools">
+            <li>HTML</li>
+            <li>Ruby on rails</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn" type="button">See Project</button>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="about-container">
-            <p class="myself">About Myself</p>
-            <p class="about-details">
-                Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-            </p>
-            <h4 class="connect">let's connect</h4>
-            <!-- <a href="#" class="connect">let's connect</a> -->
-            <ul class="socials mobile">
-                <li><a href="" >
-                    <i><img class="icons" src="./assets/images/icons/github.svg" alt=""></i>
-                </a></li>
-                <li><a href="" >
-                    <i><img class="icons" src="./assets/images/icons/Linkedin.svg" alt=""></i>
-                </a></li>
-                <li><a href="" >
-                    <i><img class="icons" src="./assets/images/icons/peace.svg" alt=""></i>
-                </a></li>
-                <li><a href="" >
-                    <i><img class="icons" src="./assets/images/icons/twitter.svg" alt=""></i>
-                </a></li>
-                <li><a href="" >
-                    <i><img class="icons" src="./assets/images/icons/microverse.svg" alt=""></i>
-                </a></li>
-            </ul>
-            <button class="btn resume">Get my resume</button>
-        </div>
-        <ul class="skills">
-            <li class="languages">
-                <div class="languages skill-group">
-                    <p class="title">languages</p>
-                    <div class="union-icon">
-                        <img class="active" src="./assets/images/icons/Union.svg" alt="">
-                    </div>
-                </div>
-                <ul class="language-list">
-                    <li>
-                        <p><img src="./assets//images//skillset/languages/javascript.svg" alt=""></p>
-                        <p class="lang-name">JavaScript</p>
-                    </li>
-                    <li>
-                        <p><img src="./assets//images//skillset/languages/html.svg" alt=""></p>
-                        <p class="lang-name">HTML</p>
-                    </li>
-                    <li>
-                        <p><img src="./assets//images//skillset/languages/css.svg" alt=""></p>
-                        <p class="lang-name">CSS</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="frameworks">
-                <div class=" skill-group">
-                    <p class="title">frameworks</p>
-                    <div class="union-icon">
-                        <img  src="./assets/images/icons/Union.svg" alt="">
-                    </div>
-                </div>
-            </li>
-            <li class="skill">
-                <div class=" skill-group">
-                    <p class="title">skills</p>
-                    <div class="union-icon">
-                        <img  src="./assets/images/icons/Union.svg" alt="">
-                    </div>
-                </div>
-            </li>
+      <div class="about-container">
+        <p class="myself">About Myself</p>
+        <p class="about-details">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website. Look through some of my work and experience! If
+          you like what you see and have a project you need coded, don’t
+          hesitate to contact me.
+        </p>
+        <h4 class="connect">let's connect</h4>
+        <!-- <a href="#" class="connect">let's connect</a> -->
+        <ul class="socials mobile">
+          <li>
+            <a href="">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/github.svg"
+                  alt=""
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/Linkedin.svg"
+                  alt=""
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/peace.svg"
+                  alt=""
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/twitter.svg"
+                  alt=""
+                />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i>
+                <img
+                  class="icons"
+                  src="./assets/images/icons/microverse.svg"
+                  alt=""
+                />
+              </i>
+            </a>
+          </li>
         </ul>
+        <button class="btn resume" type="button">Get my resume</button>
+      </div>
+      <ul class="skills">
+        <li class="languages">
+          <div class="languages skill-group">
+            <p class="title">languages</p>
+            <div class="union-icon">
+              <img
+                class="showing"
+                src="./assets/images/icons/Union.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <ul class="language-list">
+            <li>
+              <p>
+                <img
+                  src="./assets//images//skillset/languages/javascript.svg"
+                  alt=""
+                />
+              </p>
+              <p class="lang-name">JavaScript</p>
+            </li>
+            <li>
+              <p>
+                <img
+                  src="./assets//images//skillset/languages/html.svg"
+                  alt=""
+                />
+              </p>
+              <p class="lang-name">HTML</p>
+            </li>
+            <li>
+              <p>
+                <img
+                  src="./assets//images//skillset/languages/css.svg"
+                  alt=""
+                />
+              </p>
+              <p class="lang-name">CSS</p>
+            </li>
+          </ul>
+        </li>
+        <li class="frameworks">
+          <div class="skill-group">
+            <p class="title">frameworks</p>
+            <div class="union-icon">
+              <img src="./assets/images/icons/Union.svg" alt="" />
+            </div>
+          </div>
+        </li>
+        <li class="skill">
+          <div class="skill-group">
+            <p class="title">skills</p>
+            <div class="union-icon">
+              <img src="./assets/images/icons/Union.svg" alt="" />
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <footer id="contact-form">
-        <div class="contact-container">
-            <h2>contact me</h2>
-            <p>
-                If you have an application you are interested in developing, a feature that you need built or a project that needs coding.
-                I’d love to help with it!
-            </p>
-            <form  action="https://formspree.io/f/mpzebpge" method="POST">
-                <div class="form-inputs">
-                    <input maxlength="30"  class="form-items" type="text" name="name" placeholder="Lorem Ipsum" required>
-                    <input class="form-items" type="email" name="email" placeholder="loremipsum@gmail.com" required>
-                    <textarea maxlength="500" name="message" cols="30" rows="10" placeholder="Write your message here..." required></textarea>
-                </div>
-                <div class="deliver">
-                    <button type="submit" class="btn cont">get in touch</button>
-                </div>
-            </form>
-        </div>
+      <div class="contact-container">
+        <h2>contact me</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+        <form action="https://formspree.io/f/mpzebpge" method="POST">
+          <div class="form-inputs">
+            <input
+              maxlength="30"
+              class="form-items"
+              type="text"
+              name="name"
+              placeholder="Lorem Ipsum"
+              required
+            />
+            <input
+              class="form-items"
+              type="email"
+              name="email"
+              placeholder="loremipsum@gmail.com"
+              required
+            />
+            <textarea
+              maxlength="500"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+          <div class="deliver">
+            <button type="submit" class="btn cont">get in touch</button>
+          </div>
+        </form>
+      </div>
     </footer>
-</body>
+
+    <script src="./assets/javascript/index.js"></script>
+  </body>
 </html>

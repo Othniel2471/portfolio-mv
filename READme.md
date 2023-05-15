@@ -18,6 +18,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+- [Loom-Walkthrough](#loom-walkthrough) 
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -145,6 +146,13 @@ If you think that change is necessary - open a Pull Request in this repository a
 5. Fix linter errors.
 
 6. **IMPORTANT NOTE:** feel free to research auto-correct options for Stylelint if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+##  Loom-Walkthrough <a name="loom-walkthrough"></a>
+
+- Loom walkthrough: (https://www.loom.com/share/5d3467a6b52549a5917f7f6291f29aba)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
