@@ -89,7 +89,7 @@ a {
   opacity: 0.9;
   backdrop-filter: blur(7px);
   transition: all 1s ease;
-  z-index: 2;
+  /* z-index: 2; */
   display: none;
 }
 
@@ -660,10 +660,9 @@ hr {
     background-color: transparent;
     backdrop-filter: none;
     padding: 20px 16px;
-    display: block;
+    display: contents;
 
     /* height: 72px; */
-    z-index: 2;
   }
 
   .nav-list {
