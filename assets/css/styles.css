@@ -89,6 +89,7 @@ a {
   opacity: 0.9;
   backdrop-filter: blur(7px);
   transition: all 1s ease;
+
   /* z-index: 2; */
   display: none;
 }
@@ -909,7 +910,7 @@ hr {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .project-description .stack .work-tools {
     flex-wrap: wrap;
     gap: 10px;
