@@ -81,6 +81,8 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const navLink = document.querySelectorAll('.nav-content');
 const sectionPortfolio = document.querySelector('#work-section-desktop');
 const mobileSectionPortfolio = document.querySelector('#work-section-mobile');
+const modalContainer = document.querySelector('.modal-container');
+const overlay = document.querySelector('.modal-overlay');
 
 function toggle() {
   menuToggle.classList.toggle('active');
@@ -96,6 +98,47 @@ menuToggle.addEventListener('click', toggle);
 navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
+
+const displayModalContent = (anArray) => {
+  anArray = anArray.map((content) => ` 
+      <div class="modal-project">
+          <h2 class="work-title">${content.workTitle}</h2>
+          <ul class="canopy">
+              <li>${content.workRole.role}</li>
+              <li>${content.workRole.job}</li>
+              <li>${content.workRole.year}</li>
+          </ul>
+          <div class="work-img">
+              <img src="${content.workImg}" alt="tonic image">
+          </div>
+          <div class="project-description">
+              <div class='desc'>
+                  <p>${content.workDetails}</p>
+              </div>
+              <div class='stack'>
+                  <ul class="work-tools">
+                      <li>${content.workTools.stack1}</li>
+                      <li>${content.workTools.stack2}</li>
+                      <li>${content.workTools.stack3}</li>
+                      ${content.workTools.stack4 ? `<li>${content.workTools.stack4}</li>` : ''}
+                  </ul>
+
+                  <div class="buttons-container">
+                      <button class="live">See live <img src="./assets/images/icons/seeLive.png" alt=""></button>
+                      <button class="live">See soure <img src="./assets/images/icons/source.png" alt=""></button>
+                  </div>
+              </div>
+          </div>
+          <button class="close-btn">
+          <i class="fas fa-times"></i>
+          </button>
+      </div> `).join('');
+  modalContainer.innerHTML = anArray;
+  const closeBtn = document.querySelector('.close-btn');
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.remove('open-modal');
+  });
+};
 
 function displayDesktopPortfolio(portfolio) {
   const displayDesktopPortfolio = portfolio.map((item) => `
@@ -125,11 +168,36 @@ function displayDesktopPortfolio(portfolio) {
     `).join('');
 
   sectionPortfolio.innerHTML = displayDesktopPortfolio;
+
+  const modalBtn = sectionPortfolio.querySelectorAll('.btn');
+
+  modalBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const clickedBtn = e.currentTarget;
+
+      const btnDataModal = clickedBtn.dataset.modal;
+
+      const theParsedDataModal = parseInt(btnDataModal, 4);
+
+      const tempArray = portfolio.slice(theParsedDataModal, theParsedDataModal + 1);
+
+      const modal = btn.getAttribute('data-modal');
+      document.getElementById(modal).addEventListener('click', () => {
+        overlay.classList.add('open-modal');
+        displayModalContent(tempArray);
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove('open-modal');
+        }
+      });
+    });
+  });
 }
 
 function displayMobilePortfolio(portfolio) {
   const displayPortfolio = portfolio.map((item) => `
-        <div class="project">
+        <div class="project" id='${item.id}'>
         <div class="work-img">
             <img src="${item.workImg}" alt="tonic image">
         </div>
@@ -154,6 +222,32 @@ function displayMobilePortfolio(portfolio) {
     </div>
     `).join('');
   mobileSectionPortfolio.innerHTML = displayPortfolio;
+
+  const modalBtn = mobileSectionPortfolio.querySelectorAll('.btn');
+
+  modalBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const clickedBtn = e.currentTarget;
+
+      const btnDataModal = clickedBtn.dataset.modal;
+
+      const theParsedDataModal = parseInt(btnDataModal, 4);
+
+      const tempArray = portfolio.slice(theParsedDataModal, theParsedDataModal + 1);
+
+      const modalId = btn.getAttribute('data-modal');
+
+      document.getElementById(modalId).addEventListener('click', () => {
+        overlay.classList.add('open-modal');
+        displayModalContent(tempArray);
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove('open-modal');
+        }
+      });
+    });
+  });
 }
 
 // checkscreen function

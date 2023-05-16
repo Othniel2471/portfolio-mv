@@ -902,6 +902,19 @@ hr {
     gap: 1rem;
   }
 
+  .project-description .stack {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .project-description .stack .work-tools {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
 
   hr {
     display: none;
