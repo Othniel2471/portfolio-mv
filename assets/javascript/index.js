@@ -84,7 +84,9 @@ const mobileSectionPortfolio = document.querySelector('#work-section-mobile');
 const modalContainer = document.querySelector('.modal-container');
 const overlay = document.querySelector('.modal-overlay');
 const form = document.getElementById('form');
+const uName = document.getElementById('userName');
 const email = document.getElementById('email');
+const textField = document.getElementById('textField');
 const error = document.querySelector('.error');
 
 function toggle() {
@@ -102,12 +104,20 @@ navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
 
+function reset() {
+  uName.value = '';
+  email.value = '';
+  textField.value = '';
+  error.classList.remove('error-danger');
+}
+
 function handleSubmit(e) {
   e.preventDefault();
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
     form.submit();
-    form.reset();
+    reset();
   } else {
+    error.classList.add('error-danger');
     error.innerText = 'The content of the email field has to be in lower case';
   }
 }
