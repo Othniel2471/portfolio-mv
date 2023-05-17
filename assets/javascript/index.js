@@ -118,7 +118,7 @@ function handleSubmit(e) {
     reset();
   } else {
     error.classList.add('error-danger');
-    error.innerText = 'The content of the email field has to be in lower case';
+    error.innerText = 'the email field has to be in lower case';
   }
 }
 form.addEventListener('submit', (e) => {
