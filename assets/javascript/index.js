@@ -83,6 +83,9 @@ const sectionPortfolio = document.querySelector('#work-section-desktop');
 const mobileSectionPortfolio = document.querySelector('#work-section-mobile');
 const modalContainer = document.querySelector('.modal-container');
 const overlay = document.querySelector('.modal-overlay');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.querySelector('.error');
 
 function toggle() {
   menuToggle.classList.toggle('active');
@@ -97,6 +100,19 @@ function closeMobileMenu() {
 menuToggle.addEventListener('click', toggle);
 navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
+});
+
+function handleSubmit(e) {
+  e.preventDefault();
+  if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
+    form.submit();
+    form.reset();
+  } else {
+    error.innerText = 'The content of the email field has to be in lower case';
+  }
+}
+form.addEventListener('submit', (e) => {
+  handleSubmit(e);
 });
 
 const displayModalContent = (anArray) => {

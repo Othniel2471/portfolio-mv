@@ -254,7 +254,8 @@
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
-        <form action="https://formspree.io/f/mpzebpge" method="POST">
+        <!-- action="https://formspree.io/f/mpzebpge" method="POST" -->
+        <form id="form">
           <div class="form-inputs">
             <input
               maxlength="30"
@@ -265,6 +266,7 @@
               required
             />
             <input
+              id="email"
               class="form-items"
               type="email"
               name="email"
@@ -283,6 +285,7 @@
           <div class="deliver">
             <button type="submit" class="btn cont">get in touch</button>
           </div>
+          <span class="error"></span>
         </form>
       </div>
     </footer>
