@@ -108,13 +108,31 @@ function reset() {
   uName.value = '';
   email.value = '';
   textField.value = '';
-  error.classList.remove('error-danger');
 }
+
+const storeDetails = () => {
+  const userData = {
+    uName: uName.value,
+    email: email.value,
+    textField: textField.value,
+  };
+  window.localStorage.setItem('data', JSON.stringify(userData));
+};
+
+const getDetails = () => {
+  const formData = JSON.parse(localStorage.getItem('data'));
+  uName.value = formData.uName;
+  email.value = formData.email;
+  textField.value = formData.textField;
+};
+
+window.addEventListener('DOMContentLoaded', getDetails);
 
 function handleSubmit(e) {
   e.preventDefault();
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
     form.submit();
+    storeDetails();
     reset();
   } else {
     error.classList.add('error-danger');
