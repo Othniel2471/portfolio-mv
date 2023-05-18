@@ -165,10 +165,10 @@ const displayModalContent = (anArray) => {
                       <li>${content.workTools.stack2}</li>
                       <li>${content.workTools.stack3}</li>
                       ${
-                        content.workTools.stack4
-                          ? `<li>${content.workTools.stack4}</li>`
-                          : ''
-                      }
+  content.workTools.stack4
+    ? `<li>${content.workTools.stack4}</li>`
+    : ''
+}
                   </ul>
 
                   <div class="buttons-container">
@@ -180,7 +180,7 @@ const displayModalContent = (anArray) => {
           <button class="close-btn">
           <i class="fas fa-times"></i>
           </button>
-      </div> `
+      </div> `,
     )
     .join('');
   modalContainer.innerHTML = anArray;
@@ -217,7 +217,7 @@ function displayDesktopPortfolio(portfolio) {
         <button class="btn" data-modal="${item.id}">See Project</button>
     </div>
 </div>
-    `
+    `,
     )
     .join('');
 
@@ -235,7 +235,7 @@ function displayDesktopPortfolio(portfolio) {
 
       const tempArray = portfolio.slice(
         theParsedDataModal,
-        theParsedDataModal + 1
+        theParsedDataModal + 1,
       );
 
       const modal = btn.getAttribute('data-modal');
@@ -275,15 +275,15 @@ function displayMobilePortfolio(portfolio) {
                 <li>${item.workTools.stack2}</li>
                 <li>${item.workTools.stack3}</li>
                  ${
-                   item.workTools.stack4
-                     ? `<li>${item.workTools.stack4}</li>`
-                     : ''
-                 }
+  item.workTools.stack4
+    ? `<li>${item.workTools.stack4}</li>`
+    : ''
+}
             </ul>
             <button class="btn" data-modal="${item.id}">See Project</button>
         </div>
     </div>
-    `
+    `,
     )
     .join('');
   mobileSectionPortfolio.innerHTML = displayPortfolio;
@@ -300,7 +300,7 @@ function displayMobilePortfolio(portfolio) {
 
       const tempArray = portfolio.slice(
         theParsedDataModal,
-        theParsedDataModal + 1
+        theParsedDataModal + 1,
       );
 
       const modalId = btn.getAttribute('data-modal');
