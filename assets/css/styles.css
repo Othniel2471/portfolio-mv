@@ -636,6 +636,7 @@ hr {
   color: hsl(360, 71%, 66%);
   transform: scale(1.3);
 }
+
 .error {
   height: 1.25rem;
   display: grid;
@@ -649,7 +650,8 @@ hr {
   transition: all 0.3s ease-in;
   visibility: hidden;
 }
-.error-danger{
+
+.error-danger {
   color: #721c24;
   background: #f8d7da;
   visibility: visible;
