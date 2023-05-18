@@ -254,7 +254,8 @@
           that you need built or a project that needs coding. I’d love to help
           with it!
         </p>
-        <form action="https://formspree.io/f/mpzebpge" method="POST">
+        
+        <form id="form" action="https://formspree.io/f/mpzebpge" method="POST">
           <div class="form-inputs">
             <input
               maxlength="30"
@@ -263,15 +264,19 @@
               name="name"
               placeholder="Lorem Ipsum"
               required
+              id="userName"
             />
             <input
+              id="email"
               class="form-items"
               type="email"
               name="email"
               placeholder="loremipsum@gmail.com"
               required
             />
+            <span class="error"></span>
             <textarea
+              id="textField"
               maxlength="500"
               name="message"
               cols="30"
@@ -283,6 +288,7 @@
           <div class="deliver">
             <button type="submit" class="btn cont">get in touch</button>
           </div>
+          <span class="error"></span>
         </form>
       </div>
     </footer>
