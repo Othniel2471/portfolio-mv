@@ -121,6 +121,12 @@ navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
 
+// const storeDetails = () => {
+//   const userData = {
+
+//   }
+// }
+
 function reset() {
   uName.value = '';
   email.value = '';
