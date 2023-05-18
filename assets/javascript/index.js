@@ -121,17 +121,30 @@ navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
 
-function reset() {
-  uName.value = '';
-  email.value = '';
-  textField.value = '';
-}
+
+const storeDetails = () => {
+  const userData = {
+    uName: uName.value,
+    email: email.value,
+    textField: textField.value,
+  };
+  window.localStorage.setItem('data', JSON.stringify(userData));
+};
+
+const getDetails = () => {
+  const formData = JSON.parse(localStorage.getItem('data'));
+  uName.value = formData.uName;
+  email.value = formData.email;
+  textField.value = formData.textField;
+};
+
+window.addEventListener('DOMContentLoaded', getDetails);
 
 function handleSubmit(e) {
   e.preventDefault();
   if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
     form.submit();
-    reset();
+    storeDetails();
   } else {
     error.classList.add('error-danger');
     error.innerText = 'the email field has to be in lower case';
