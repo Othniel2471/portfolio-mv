@@ -121,7 +121,6 @@ navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
 
-
 const storeDetails = () => {
   const userData = {
     uName: uName.value,
@@ -342,6 +341,6 @@ function checkScreen() {
 }
 
 // load portfolio section
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoad', () => {
   checkScreen();
 });
