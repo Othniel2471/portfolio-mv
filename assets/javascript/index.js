@@ -341,6 +341,6 @@ function checkScreen() {
 }
 
 // load portfolio section
-window.addEventListener('DOMContentLoad', () => {
+window.addEventListener('DOMContentLoaded', () => {
   checkScreen();
 });
