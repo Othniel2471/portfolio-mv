@@ -121,6 +121,7 @@ navLink.forEach((btn) => {
   btn.addEventListener('click', closeMobileMenu);
 });
 
+
 const storeDetails = () => {
   const userData = {
     uName: uName.value,
